@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="15dp"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right" />
+
+    <EditText
+        android:id="@+id/expenseAmountId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_expense_amount"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/expanseDateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_date_range_black_24dp"
+        android:ems="10"
+        android:hint="@string/enter_expense_date"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/expenseTimeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_access_time_black_24dp"
+        android:ems="10"
+        android:padding="15dp"
+        android:hint="@string/enter_expense_time_optional"
+        android:inputType="textPersonName" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/displayDocId"
+        android:layout_width="43dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_assignment_black_24dp" />
+
+    <Button
+        android:id="@+id/addDocId"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="15dp"
+        android:onClick="AddDocument"
+        android:text="@string/add_document_if_any"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/addExpId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:padding="15dp"
+    android:text="@string/add_expense"
+    android:textColor="@color/white"
+    android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="expense_type">
+        <item>Select expense type</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Electricity Bill</item>
+        <item>Gas Bill</item>
+        <item>Water Bill</item>
+        <item>Transport Cost</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>
